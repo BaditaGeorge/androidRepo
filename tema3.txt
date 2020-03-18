@@ -1,0 +1,12 @@
+----- TEMA 3 -----
+
+1. Am creat o noua activitate, se numeste SecondActivity, am folosit 
+intent-ul pentru a o lega de aplicatia principala, utilizarea 
+intent-ului este in functia changeToSecond().
+2. Am creat prin suprascrierea functiei 'public boolean 
+onOptionsItemSelected', prin aceasta functie am adaugat evenimente care 
+sa se execute cand dam click pe un anumit element din meniu.
+3. Am creat o clasa denumite MyDialog prin care am extins 
+DialogFragment, si am creat un layout pentru a putea sa iau input-ul 
+text dat de utilizator. Input-ul este apoi afisat in cadrul unui toast 
+in cadrul activitatii secundare.
