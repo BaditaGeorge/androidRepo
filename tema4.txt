@@ -1,0 +1,4 @@
+in meniul Preferences este activitatea de tip PReference
+am realizat salvarea de preferinta, verifica preferinta si o salvez intern
+cele 4 butoane fac crearea,verifiarea preferintei,salvarea preferintei si verificarea salvarii
+totul se afla in clasa ThirdActivity

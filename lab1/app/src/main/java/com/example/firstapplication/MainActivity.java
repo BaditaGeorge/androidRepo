@@ -2,7 +2,9 @@ package com.example.firstapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -32,6 +34,11 @@ public class MainActivity extends AppCompatActivity {
         final String[] heroes = new String[]{
                 "Batman","Superman","Wonder Woman","Aquaman","Martian Manhunter"
         };
+//        SharedPreferences tprefs = getSharedPreferences("firstfile",Context.MODE_PRIVATE);
+//        if(tprefs != null) {
+//            String hero = tprefs.getString("hero", null);
+//            heroes[0] = hero;
+//        }
         ArrayList<String> heroList = new ArrayList<String>();
         heroList.addAll(Arrays.asList(heroes));
         final ArrayAdapter<String> listAdapter = new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item,heroList);
@@ -90,6 +97,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void changeToPref(){
+        Intent intent = new Intent(this,ThirdActivity.class);
+        intent.putExtra("preferences","Preferinte");
+        startActivity(intent);
+    }
+
     public void changeToThird(){
 
     }
@@ -103,8 +116,11 @@ public class MainActivity extends AppCompatActivity {
             case R.id.second:
                 changeToThird();
                 return true;
+            case R.id.third:
+                changeToPref();
+                return true;
             default:
-                return  super.onOptionsItemSelected(item);
+                return super.onOptionsItemSelected(item);
         }
     }
 

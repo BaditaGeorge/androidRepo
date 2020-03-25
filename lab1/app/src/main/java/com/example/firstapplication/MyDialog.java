@@ -20,6 +20,7 @@ public class MyDialog extends DialogFragment {
 
     public FragmentActivity acv;
     public Context cntx;
+    public String opt="";
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState){
@@ -31,6 +32,7 @@ public class MyDialog extends DialogFragment {
                 .setPositiveButton("Submit", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
+                        opt = mEdit.getText().toString();
                         Toast.makeText(cntx,mEdit.getText(),Toast.LENGTH_LONG).show();
                     }
                 })
