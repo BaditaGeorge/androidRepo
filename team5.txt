@@ -1,0 +1,7 @@
+In activitate ActivityForSensors am rezolvat exercitiile pentru acest laborator
+AM luat lista senzorilor activi pe dispozitiv
+Apoi am activat senzorul de locatie
+Am facut cerere pentur permisiunea pentru a utiliza GPS-ul
+primul buton afiseaza intr-un Toasta datele senzorilor de pe device
+Al doilea buton afiseaza locatia in TextView-ul din pagina activitatii.
+Logica este in clasa ActivityForSensor

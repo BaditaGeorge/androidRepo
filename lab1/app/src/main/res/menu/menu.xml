@@ -9,5 +9,5 @@
         android:title="First Menu Item" />
     <item
         android:id="@+id/second"
-        android:title="Second Menu Item" />
+        android:title="ActivityForSensor" />
 </menu>

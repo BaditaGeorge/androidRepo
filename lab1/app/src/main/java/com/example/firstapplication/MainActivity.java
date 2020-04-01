@@ -104,7 +104,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void changeToThird(){
-
+        Intent intent = new Intent(this,ActivityForSensor.class);
+        startActivity(intent);
     }
 
     @Override
