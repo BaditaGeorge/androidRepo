@@ -120,7 +120,6 @@ public class ActivityForSensor extends AppCompatActivity implements LocationList
     @Override
     public void onProviderDisabled(String provider) {
         // TODO Auto-generated method stub
-
     }
 
     @Override

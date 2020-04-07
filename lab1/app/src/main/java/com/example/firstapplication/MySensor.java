@@ -1,4 +1,7 @@
 package com.example.firstapplication;
 
-public class MySensor extends Object {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class MySensor extends AppCompatActivity {
+
 }

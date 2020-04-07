@@ -1,0 +1,5 @@
+Activitatea noua poate fi accesata prin link-ul din meniu cu titlul WebCamera.
+WebCamera este clasa in care se afla logica pentur activitatea ce deschide camera.
+Butonul StartCamera deschide camera si ne permite sa facem o fotografie si sa o pastram.
+Apoi revenim in pagina aplicatiei, unde este afisata imaginea intr-un ImageView. Butonul SaveImage
+salveaza imaginea iar apoi o reincarca in ImageView pentru a se verifica ca salvarea a fost facuta.

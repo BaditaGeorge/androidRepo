@@ -108,6 +108,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void changeToCam(){
+        Intent intent = new Intent(this,WebCamera.class);
+        startActivity(intent);
+    }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item){
         switch(item.getItemId()){
@@ -119,6 +124,9 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             case R.id.third:
                 changeToPref();
+                return true;
+            case R.id.forth:
+                changeToCam();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

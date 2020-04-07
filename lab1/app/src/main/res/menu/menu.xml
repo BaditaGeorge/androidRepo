@@ -10,4 +10,7 @@
     <item
         android:id="@+id/second"
         android:title="ActivityForSensor" />
+    <item
+        android:id="@+id/forth"
+        android:title="WebCamera" />
 </menu>
